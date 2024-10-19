@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Table</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        /* Responsive design */
+        @media screen and (max-width: 768px) {
+            table {
+                display: block;
+                overflow-x: auto;
+                white-space: nowrap;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Responsive Data Table</h2>
+    <table id="data-table">
+        <thead>
+            <tr>
+                <th>Code</th>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Subject/Department</th>
+                <th>Date of Birth</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be populated here by JavaScript -->
+        </tbody>
+    </table>
+</div>
+
+<script>
+    // JSON data
+    const data = [
+        {"code": "PR", "id": "D339346", "name": "Rawshan Ara Nuri", "subject": "", "dob": "03-03-1979", "grade": 4},
+        {"code": "AP", "id": "D342420", "name": "Md Tozammel Hoque", "subject": "", "dob": "05-01-1971", "grade": 6},
+        {"code": "LEC", "id": "D644242", "name": "Md Saiful Islam", "subject": "", "dob": "01-07-1971", "grade": 7},
+        {"code": "LEC", "id": "D644244", "name": "Rahima Akter", "subject": "", "dob": "18-01-1972", "grade": 7},
+        {"code": "COMPT", "id": "D2000076", "name": "Hafiza Begum", "subject": "", "dob": "31-12-1974", "grade": 8},
+        {"code": "PHT", "id": "D2012026", "name": "Miss Shahina Akter", "subject": "", "dob": "03-04-1973", "grade": 8},
+        {"code": "AGT", "id": "D2017281", "name": "Julekha Akter", "subject": "", "dob": "01-03-1982", "grade": 8},
+        {"code": "AT", "id": "D346999", "name": "Maksuda Begum", "subject": "", "dob": "20-03-1973", "grade": 9},
+        {"code": "LIB", "id": "D2007916", "name": "Md. Rofiqul Islam", "subject": "", "dob": "06-09-1977", "grade": 9},
+        {"code": "AT", "id": "D2009614", "name": "Md. Abdul Awal", "subject": "", "dob": "01-03-1978", "grade": 9},
+        {"code": "AT", "id": "D2017282", "name": "Md. Mizanur Rahman", "subject": "", "dob": "15-09-1970", "grade": 9},
+        {"code": "LEC", "id": "M0052729", "name": "Md. Mahmudul Hasan", "subject": "Arabic", "dob": "01-03-1991", "grade": 9},
+        {"code": "LEC", "id": "M0052724", "name": "Didarul Islam", "subject": "Islamic History", "dob": "01-12-1994", "grade": 9},
+        {"code": "LEC", "id": "M0061150", "name": "Sajedul Islam", "subject": "Information and communication technology", "dob": "12-02-1992", "grade": 9},
+        {"code": "LEC", "id": "M0059038", "name": "Zahidul Islam", "subject": "Arabic", "dob": "01-01-1996", "grade": 9},
+        {"code": "AM", "id": "M0058627", "name": "Md. Kamal Uddin", "subject": "Islamic Studies", "dob": "20-02-1997", "grade": 10},
+        {"code": "EB-H", "id": "D645271", "name": "Syeda Nargis Ara Begum", "subject": "", "dob": "10-01-1979", "grade": 11},
+        {"code": "AT", "id": "M0058624", "name": "Md. Mahmudul Hasan", "subject": "Bengali", "dob": "01-10-1994", "grade": 11},
+        {"code": "AT", "id": "M0058946", "name": "Mst. Tania Khatun", "subject": "Chemistry", "dob": "01-11-1995", "grade": 11},
+        {"code": "AT", "id": "M0058427", "name": "Moli Khatun", "subject": "Social Science", "dob": "27-12-1995", "grade": 11},
+        {"code": "EB", "id": "D336951", "name": "Asma Perowashi", "subject": "", "dob": "15-01-1972", "grade": 14},
+        {"code": "", "id": "D339347", "name": "Mstr Shahida Khanam", "subject": "", "dob": "01-01-1972", "grade": 14},
+        {"code": "", "id": "D2012029", "name": "Shazeda Khatun", "subject": "", "dob": "01-03-1981", "grade": 14},
+        {"code": "", "id": "N2106303", "name": "Sayed Lutfor Rahman", "subject": "", "dob": "01-03-1970", "grade": 16},
+        {"code": "JR.T", "id": "M0058857", "name": "Samira Afrin", "subject": "", "dob": "02-10-1997", "grade": 16},
+        {"code": "ACO", "id": "M0053726", "name": "Bibi Amena", "subject": "", "dob": "01-01-1989", "grade": 16},
+        {"code": "", "id": "D646263", "name": "Md Abdul Kuddus", "subject": "", "dob": "01-03-1984", "grade": 18},
+        {"code": "", "id": "D2007918", "name": "Shahana Aktar", "subject": "", "dob": "02-01-1987", "grade": 18},
+        {"code": "", "id": "D2007917", "name": "Md. Belal Hossen", "subject": "", "dob": "05-01-1982", "grade": 19},
+        {"code": "N", "id": "N2110817", "name": "Tahmin Huri", "subject": "", "dob": "03-01-1991", "grade": 20}
+    ];
+
+    // Function to populate the table
+    function populateTable() {
+        const tableBody = document.querySelector("#data-table tbody");
+        data.forEach(item => {
+            const row = document.createElement("tr");
+            row.innerHTML = `
+                <td>${item.code}</td>
+                <td>${item.id}</td>
+                <td>${item.name}</td>
+                <td>${item.subject || '-'}</td>
+                <td>${item.dob}</td>
+                <td>${item.grade}</td>
+            `;
+            tableBody.appendChild(row);
+        });
+    }
+
+    // Call the function to populate the table
+    populateTable();
+</script>
+
+</body>
+</html>
