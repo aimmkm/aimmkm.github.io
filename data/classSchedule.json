@@ -1,0 +1,16 @@
+[
+    {
+        "class": "1",
+        "day": "Sunday",
+        "period": "1",
+        "teacherID": "1",
+        "subject": "Mathematics"
+    },
+    {
+        "class": "2",
+        "day": "Monday",
+        "period": "2",
+        "teacherID": "2",
+        "subject": "English"
+    }
+]
