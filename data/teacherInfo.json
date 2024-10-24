@@ -1,0 +1,178 @@
+[
+		{
+			"ID": "D342420",
+			"Name": "Md Tozammel Hoque",
+			"Code": "Assist Professor",
+			"Subject": "-",
+			"Mobile": "01715623120"
+		},
+		{
+			"ID": "D644242",
+			"Name": "Md. Saiful Islam",
+			"Code": "Lecturer",
+			"Subject": "-",
+			"Mobile": "-"
+		},
+		{
+			"ID": "D644244",
+			"Name": "Rahima Akter",
+			"Code": "Lecturer",
+			"Subject": "-",
+			"Mobile": "-"
+		},		
+		{
+			"ID": "M0052729",
+			"Name": "Md. MH. Mamun",
+			"Code": "Lecturer",
+			"Subject": "Arabic",
+			"Mobile": "01608422951"
+		},			
+		{
+			"ID": "M0052724",
+			"Name": "Didarul Islam",
+			"Code": "Lecturer",
+			"Subject": "Islamic History",
+			"Mobile": "01515249825"
+		},
+		{
+			"ID": "M0059038",
+			"Name": "Zahidul Islam",
+			"Code": "Lecturer",
+			"Subject": "Arabic",
+			"Mobile": "01771117135"
+		},				
+		{
+			"ID": "M0061150",
+			"Name": "Sajedul Islam",
+			"Code": "Lecturer",
+			"Subject": "ICT",
+			"Mobile": "01515283462"
+		},
+		{
+			"ID": "D2000076",
+			"Name": "Hafiza Begum",
+			"Code": "COMPT",
+			"Subject": "-",
+			"Mobile": "01798362465"
+		},
+		{
+			"ID": "D2012026",
+			"Name": "MS Shahina Akter",
+			"Code": "PHT",
+			"Subject": "-",
+			"Mobile": "01924085355"
+		},
+		{
+			"ID": "D2017281",
+			"Name": "Julekha Akter",
+			"Code": "AGT",
+			"Subject": "-",
+			"Mobile": "01914727617"
+		},
+		{
+			"ID": "D346999",
+			"Name": "Maksuda Begum",
+			"Code": "AT",
+			"Subject": "-",
+			"Mobile": "-"
+		},
+		{
+			"ID": "D2007916",
+			"Name": "Md. Rofiqul Islam",
+			"Code": "LIB",
+			"Subject": "-",
+			"Mobile": "-"
+		},
+		{
+			"ID": "D339347",
+			"Name": "MS Shahida Khanam",
+			"Code": "EB",
+			"Subject": "-",
+			"Mobile": "-"
+		},
+		{
+			"ID": "M0058857",
+			"Name": "Samira Afrin",
+			"Code": "JR.T",
+			"Subject": "-",
+			"Mobile": "01677123421"
+		},
+		{
+			"ID": "D2009614",
+			"Name": "Md. Abdul Awal",
+			"Code": "AT",
+			"Subject": "-",
+			"Mobile": "-"
+		},		
+		{
+			"ID": "D2017282",
+			"Name": "Md Mizanur Rahman",
+			"Code": "AT",
+			"Subject": "-",
+			"Mobile": "-"
+		},			
+		{
+			"ID": "M0058627",
+			"Name": "Md. Kamal Uddin",
+			"Code": "AM",
+			"Subject": "Islamic Studies",
+			"Mobile": "01551807026"
+		},
+		{
+			"ID": "D336951",
+			"Name": "Asma Perowashi",
+			"Code": "EB",
+			"Subject": "-",
+			"Mobile": "-"
+		},		
+		{
+			"ID": "D645271",
+			"Name": "Syeda Nargis Ara",
+			"Code": "EB-H",
+			"Subject": "-",
+			"Mobile": "-"
+		},		
+		{
+			"ID": "M0058624",
+			"Name": "Md. Mahmudul Hasan",
+			"Code": "AT",
+			"Subject": "Bengali",
+			"Mobile": "01754799107"
+		},	
+		{
+			"ID": "M0058946",
+			"Name": "Mst. Tania Khatun",
+			"Code": "AT",
+			"Subject": "Chemistry",
+			"Mobile": "01780780997"
+		},
+		{
+			"ID": "M0058427",
+			"Name": "Moli Khatun",
+			"Code": "AT",
+			"Subject": "Social Science",
+			"Mobile": "01558977470"
+		},
+		{
+			"ID": "D2012029",
+			"Name": "Shazeda Khatun",
+			"Code": "-",
+			"Subject": "-",
+			"Mobile": "-"
+		},	
+		{
+			"ID": "N2106303",
+			"Name": "Sayed Lutfor Rah.",
+			"Code": "-",
+			"Subject": "-",
+			"Mobile": "01677762009"
+		},
+		{
+			"ID": "M0053726",
+			"Name": "Bibi Amena",
+			"Code": "ACO",
+			"Subject": "-",
+			"Mobile": "-"
+		},
+		
+	];
