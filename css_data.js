@@ -49,7 +49,7 @@
 			"Name": "Sajedul Islam",
 			"Code": "Lecturer",
 			"Subject": "ICT",
-			"Mobile": "01515283462"
+			"Mobile": "01954901220"
 		},
 		{
 			"ID": "D2000076",
